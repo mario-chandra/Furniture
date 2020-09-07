@@ -1,0 +1,1307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+		  $("#plus").click(function(){
+			$('input[name="qty"]').val(((parseInt($('input[name="qty"]').val()))+1).toString());
+		  });
+		  $("#minus").click(function(){
+			$('input[name="qty"]').val(((parseInt($('input[name="qty"]').val()))-1).toString());
+		  });
+		});
+	</script>
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+	
+	<style type="text/css">
+		.main-container{
+			margin:0;
+			width: 100%;
+			padding: 100px;
+			padding-bottom: 60px;
+			padding-top: 60px;
+		}
+	</style>
+	
+	
+	<style type="text/css">
+		.img-small-wrap {
+			padding: 20px;
+			text-align: center;
+		}
+		.item-gallery {
+			width: 80px;
+			height: 80px;
+			border: 1px solid #ddd;
+			margin: 7px 5px;
+			display: inline-block;
+			overflow: hidden;
+		}
+		
+	</style>
+	
+	<style type="text/css">
+		.desc-container{
+			border-top: 1px solid grey;
+			display: flex;
+			padding-top: 40px;
+		}
+		.desc-detail-container{
+			width: 75%;
+			padding: 30px;
+		}
+	</style>
+	
+	
+  </head>
+  <body>
+    <!-- header1 -->
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar1-color top-nav">
+      <div class="collapse navbar-collapse container container-crum" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="navbar-brand crum-size" href="#" style="color: #213B6C;">
+                  <img id="logo" alt="Logo" src="img/cicilan.svg" width="15" height="15">
+                Cicilan 0%
+              </a>
+          </li>
+          <li>
+            <a class="navbar-brand crum-size" href="#" style="color: #213B6C;">
+                  <img id="logo" alt="Logo" src="img/garansi.svg" width="15" height="15">
+                Garansi 1 Tahun
+              </a>
+          </li>
+          <li>
+            <a class="navbar-brand crum-size" href="#" style="color: #213B6C;">
+                  <img id="logo" alt="Logo" src="img/gratispengembalian.svg" width="15" height="15">
+                Gratis Pengembalian
+              </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- header-2 -->
+    <nav class="navbar  top-nav2">
+      <div class="container container-h">
+        <span class="container-title title">FURNITURE</span>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2 input-h m-0"  type="search" placeholder="Search" aria-label="Search" size="50px">
+          <div class="dropdown show">
+            <a class="nav-link dropdown-toggle rm-symbol dropdown-text2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <img src="img/account.svg" alt="Smiley face" height="18" width="18">
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <div class="container">
+                <a class="dropdown-item item-drop" href="#">Ringkasan Akun</a>
+                <a class="dropdown-item item-drop" href="#">Profil Saya</a>
+                <a class="dropdown-item item-drop" href="#">Daftar Alamat</a>
+                <a class="dropdown-item item-drop" href="#">Wishlist</a>
+                <a class="dropdown-item item-drop" href="#">Pesanan Saya</a>
+                <a class="dropdown-item item-drop" href="#">Voucher</a>
+                <a class="dropdown-item item-drop" href="#">Tukar Point</a>
+                <a class="dropdown-item item-drop" href="#">Action</a>
+
+              </div>
+
+              </div>
+            </div>
+            <div class="dropdown show">
+              <a class="nav-link dropdown-toggle rm-symbol dropdown-text" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/keranjang.svg" alt="Smiley face" height="18" width="18">
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <div class="container">
+                  <a class="dropdown-item item-drop" href="#">Ringkasan Akun</a>
+                  <a class="dropdown-item item-drop" href="#">Profil Saya</a>
+                  <a class="dropdown-item item-drop" href="#">Daftar Alamat</a>
+                  <a class="dropdown-item item-drop" href="#">Wishlist</a>
+                  <a class="dropdown-item item-drop" href="#">Pesanan Saya</a>
+                  <a class="dropdown-item item-drop" href="#">Voucher</a>
+                  <a class="dropdown-item item-drop" href="#">Tukar Point</a>
+                  <a class="dropdown-item item-drop" href="#">Action</a>
+
+                </div>
+
+                </div>
+              </div>
+            </div>
+
+        </form>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-color top-nav3">
+      <div class=" container ">
+        <ul class="nav nav-pills header-3">
+          <!-- Ruang tamu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle rm-symbol dropdown-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RUANG TAMU</a>
+            <div class="dropdown-menu">
+              <table style='width: 500px; height: 10px;'>
+                <tr>
+                  <td class="tests">SOFA</td>
+                  <td class="tests">TEMPAT DUDUK</td>
+                  <td class="tests">LEMARI</td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Kursi Armchair</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Recliners</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Tamu</a></td>
+
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa 2 Seater</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Bangku</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Samping</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa 3 Seater</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Kursi Santai</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja TV</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa L</a></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Makan</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa Bed</a></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Kabinet</a></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">lemari baju</a></td>
+                </tr>
+              </table>
+
+            </div>
+          </li>
+          <!-- Ruang makan -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle rm-symbol dropdown-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RUANG MAKAN</a>
+            <div class="dropdown-menu">
+              <table style='width: 600px; height: 10px;'>
+                <tr>
+                  <td class="tests">SOFA</td>
+                  <td class="tests">TEMPAT DUDUK</td>
+                  <td class="tests">LEMARI</td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Kursi Armchair</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Recliners</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Tamu</a></td>
+
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa 2 Seater</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Bangku</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Samping</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa 3 Seater</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Kursi Santai</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja TV</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa L</a></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Makan</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa Bed</a></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Kabinet</a></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">lemari baju</a></td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <!-- Kamar tidur -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle rm-symbol dropdown-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">KAMAR TIDUR</a>
+            <div class="dropdown-menu">
+              <table style='width: 500px; height: 10px;'>
+                <tr>
+                  <td class="tests">SOFA</td>
+                  <td class="tests">TEMPAT DUDUK</td>
+                  <td class="tests">Tempat Penyimpanan</td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Kursi Armchair</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Recliners</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Tamu</a></td>
+
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa 2 Seater</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Bangku</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Samping</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa 3 Seater</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Kursi Santai</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja TV</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa L</a></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Makan</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa Bed</a></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Kabinet</a></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">lemari baju</a></td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <!-- Ruang kerja -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle  rm-symbol dropdown-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RUANG KERJA</a>
+            <div class="dropdown-menu">
+              <table style='width: 500px; height: 10px;'>
+                <tr>
+                  <td class="tests">SOFA</td>
+                  <td class="tests">TEMPAT DUDUK</td>
+                  <td class="tests">LEMARI</td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Kursi Armchair</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Recliners</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Tamu</a></td>
+
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa 2 Seater</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Bangku</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Samping</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa 3 Seater</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Kursi Santai</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja TV</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa L</a></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Makan</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa Bed</a></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Kabinet</a></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">lemari baju</a></td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <!-- Dekorasi Rumah -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle rm-symbol dropdown-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">DEKORASI RUMAH</a>
+            <div class="dropdown-menu">
+              <table style='width: 500px; height: 10px;'>
+                <tr>
+                  <td class="tests">SOFA</td>
+                  <td class="tests">TEMPAT DUDUK</td>
+                  <td class="tests">LEMARI</td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Kursi Armchair</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Recliners</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Tamu</a></td>
+
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa 2 Seater</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Bangku</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Samping</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa 3 Seater</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Kursi Santai</a></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja TV</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa L</a></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Meja Makan</a></td>
+                </tr>
+                <tr>
+                  <td><a class="dropdown-item tab-drop " href="#">Sofa Bed</a></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">Kabinet</a></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><a class="dropdown-item tab-drop " href="#">lemari baju</a></td>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+	
+	<div class="main-container">
+		
+		<div class="row">
+			<div class="col-5">
+				
+				
+				<img src="products-img/img1.jpg" class="rounded shadow mb-3" width="100%">
+				 
+				<!--Carousel Wrapper-->
+				<div id="multi-item-example" class="row mx-auto carousel slide carousel-multi-item" style="height: 100px; width: 100%" data-ride="carousel" style="height: 100px">
+
+					<!--Controls-->
+					<div class="col-1 p-0 pt-2 text-left" style="height: 100px">
+						<button class="btn btn-light btn-sm pt-0 mt-2" href="#multi-item-example" data-slide="next">
+							<svg class="bi bi-caret-left-fill" width="1.2em" height="1.2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 00-1.659-.753l-5.48 4.796a1 1 0 000 1.506z"/>
+							</svg>
+						</button>
+					</div>
+					<!--/.Controls-->
+
+					<!--Slides-->
+					<div class="col-10 p-0" style="height: 100px; width: 100%">
+					  <div class="carousel-inner" style="height: 100px; width: 100%" role="listbox">
+
+						<!--First slide-->
+						<div class="carousel-item active" style="height: 100px; width: 100%">
+						<div class="row m-0" style="height: 100px; width: 100%">
+
+						  <div class="col-3 p-0">
+							<div class="">
+							  <img class="img-fluid w-100 rounded shadow" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(38).jpg" alt="Card image cap">
+							</div>
+						  </div>
+
+						  <div class="col-3 p-0">
+							<div class="card">
+							  <img class="img-fluid w-100 rounded shadow" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg" alt="Card image cap">
+							</div>
+						  </div>
+
+						  <div class="col-3 p-0">
+							<div class="card">
+							  <img class="img-fluid w-100 rounded shadow" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(42).jpg" alt="Card image cap">
+							</div>
+						  </div>
+
+						  <div class="col-3 p-0">
+							<div class="card">
+							  <img class="img-fluid w-100 rounded shadow" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(8).jpg" alt="Card image cap">
+							</div>
+						  </div>
+						</div>
+						</div>
+						<!--/.First slide-->
+
+						<!--Second slide-->
+						<div class="carousel-item" style="height: 100px; width: 100%">
+						<div class="row m-0" style="height: 100px; width: 100%">
+
+						  <div class="col-3 p-0">
+							<div class="card">
+							  <img class="img-fluid w-100 rounded shadow" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" alt="Card image cap">
+							</div>
+						  </div>
+
+						  <div class="col-3 p-0">
+							<div class="card">
+							  <img class="img-fluid w-100 rounded shadow" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg" alt="Card image cap">
+							</div>
+						  </div>
+
+						  <div class="col-3 p-0">
+							<div class="card">
+							  <img class="img-fluid w-100 rounded shadow" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg" alt="Card image cap">
+							</div>
+						  </div>
+
+						  <div class="col-3 p-0">
+							<div class="card">
+							  <img class="img-fluid w-100 rounded shadow" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(26).jpg" alt="Card image cap">
+							</div>
+						  </div>
+						</div>
+						</div>
+						<!--/.Second slide-->
+					  </div>
+					</div>
+					<!--/.Slides-->
+				
+				
+					<!--Controls--> 
+					<div class="col-1 p-0 pt-2 text-right">
+						<button class="btn btn-light btn-sm pt-0 mt-2" href="#multi-item-example" data-slide="prev">
+							<svg class="bi bi-caret-right-fill" width="1.2em" height="1.2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 011.659-.753l5.48 4.796a1 1 0 010 1.506z"/>
+							</svg>
+						</button>
+					</div>
+					<!--/.Controls-->
+
+				</div>
+				<!--/.Carousel Wrapper-->	
+    
+			</div>
+			<div class="col-7" style="padding-left: 60px;">
+				<div class="row prd-detail prd-title">
+					<strong>PRODUCT NAME</strong>
+				</div>
+				<div class="row prd-detail">
+					<div class="col-3 prd-info">HARGA</div>
+					<div class="col-9 prd-price">
+						<strong>Rp. XXX.XXX</strong>
+					</div>
+				</div>
+				
+				
+				<div class="row prd-detail">
+					<div class="col-3 prd-info">REWARD</div>
+					<div class="col-9 prd-info">
+						info
+					</div>
+				</div>
+				
+				<div class="row prd-detail">
+					<div class="col-3 prd-info">CICILAN</div>
+					<div class="col-9 prd-info">
+						info
+					</div>
+				</div>
+				<div class="row prd-detail">
+					<div class="col-3 prd-info">JUMLAH</div>
+					<div class="col-9 prd-info">
+						Stok Tersedia<br><br>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<button style="min-width: 2.5rem" id="minus" class="btn btn-decrement btn-light shadow-sm" type="button">
+									<strong>-</strong>
+								</button>
+							</div>
+							<input type="text" class="shadow-sm border-0" name="qty" size="5" value="0" max="5" min="0" style="text-align: center" readonly>
+							<div class="input-group-append">
+								<button style="min-width: 2.5rem" id="plus" class="btn btn-increment btn-light shadow-sm" type="button">
+									<strong>+</strong>
+								</button>
+							</div>
+						</div>
+						<br>
+						<button type="button" class="btn btn-warning shadow mr-3"><strong style="color: white">Beli Sekarang</strong></button>
+						<button type="button" class="btn btn-info shadow"><strong>Tambah ke Keranjang</strong></button>
+						&nbsp&nbsp&nbsp
+						<svg class="bi bi-heart-fill" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" clip-rule="evenodd"/>
+						</svg>
+					</div>
+				</div>
+				
+				<div class="row prd-detail" style="border-bottom: 0">
+					<div class="col-3 prd-info">METODE<br>PENGIRIMAN</div>
+					<div class="col-9 prd-info">
+						<div class="radio row">
+							<div class="col-1"><input type="radio" name="metode-pengiriman" id="mp-1" checked></div>
+							<div class="col-11" style="margin-left: -20px">
+								<p style="line-height: 1;"><strong>Pengiriman Langsung</strong><br>
+								<span style="font-size: 10px; color: grey">Pesanan dikirim langsung ke tempat anda</span></p>
+							</div>
+						</div>
+						<div class="radio row">
+							<div class="col-1"><input type="radio" name="metode-pengiriman" id="mp-2"></div>
+							<div class="col-11" style="margin-left: -20px">
+								<p style="line-height: 1;"><strong>Ambil di toko</strong><br>
+								<span style="font-size: 10px; color: grey">Ambil pesanan langsung dari store yang dipilih</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="desc-container">
+			<div class="desc-detail-container shadow rounded">
+				<div class="border-bottom pb-2"><h3>Detail Produk & Spesifikasi</h3></div>
+				<div class="text-secondary border-bottom pb-3">
+					<p style="font-size: 15px">
+						<ul>
+						  <li>Dimensi produk : </li>
+						  <li>Material produk : </li>
+						  <li>Warna produk : </li>
+						  <li>Berat produk : </li>
+						</ul> 
+					</p>
+					<p style="font-size: 14px">
+						Meja ini terpasang gps sehingga jika diculik masih bisa dideteksi keberadaannya. Meja ini juga tau jalan pulang
+						sehingga jika tersesat dapat pulang sendiri dengan keempat kakinya. 
+					</p>
+				</div>
+				<div class="pt-2 pb-3 border-bottom">
+					<h5>CATATAN TOKO</h5>
+					<br>
+					<ul style="line-height: 1.3; font-size: 14px;">
+					  <li>Kebijaksanaan Pengembalian Produk <br>
+					  <span class="text-secondary" style="font-size: 12px">GARANSI BARANG SELAMAT SAMPAI KE TUJUAN</span></li>
+					  <br>
+					  <li>Harga Menentukan Kualitas Produk<br>
+					  <span class="text-secondary" style="font-size: 12px">HARGA MENENTUKAN KUALITAS PRODUK</span></li>
+					</ul> 
+				</div>
+				
+				<div class="rev-container border-bottom pt-3 pb-4">
+					<h3>Ulasan</h3>
+					<h6 class="text-secondary">NAMA PRODUK</h6>
+					<div class="row mt-3">
+						<div class="col-3">
+							<div class="text-center" style="height: 100px">
+								<span style="font-size: 90px; font-family: Lucida Console, Courier, monospace;">5<span style="font-size: 75px">.0</span></span>
+							</div>
+							<div class="text-center">
+								<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+								</svg>
+								<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+								</svg>
+								<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+								</svg>
+								<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+								</svg>
+								<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+								</svg>
+								<br><small class="text-secondary">(5) ulasan</small>
+							</div>
+						</div>
+						
+						<div class="col-4">
+							<div class="row">
+								<div class="col-1"><svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+								</svg></div>
+								<div class="col-7" style="padding: 9px;"><div class="progress" style="height: 10px">
+								  <div class="progress-bar bg-warning" style="width:100%; height: 10px" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div></div>
+								<div class="col-2" style="padding: 0"><small class="text-secondary">5</small></div>
+							</div>
+							
+							<div class="row">
+								<div class="col-1"><svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+								</svg></div>
+								<div class="col-7" style="padding: 9px;"><div class="progress" style="height: 10px">
+								  <div class="progress-bar bg-warning" style="width:0%; height: 10px" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div></div>
+								<div class="col-2" style="padding: 0"><small class="text-secondary">0</small></div>
+							</div>
+							
+							<div class="row">
+								<div class="col-1"><svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+								</svg></div>
+								<div class="col-7" style="padding: 9px;"><div class="progress" style="height: 10px">
+								  <div class="progress-bar bg-warning" style="width:0%; height: 10px" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div></div>
+								<div class="col-2" style="padding: 0"><small class="text-secondary">0</small></div>
+							</div>
+							
+							<div class="row">
+								<div class="col-1"><svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+								</svg></div>
+								<div class="col-7" style="padding: 9px;"><div class="progress" style="height: 10px">
+								  <div class="progress-bar bg-warning" style="width:0%; height: 10px" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div></div>
+								<div class="col-2" style="padding: 0"><small class="text-secondary">0</small></div>
+							</div>
+							
+							<div class="row">
+								<div class="col-1"><svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+								</svg></div>
+								<div class="col-7" style="padding: 9px;"><div class="progress" style="height: 10px">
+								  <div class="progress-bar bg-warning" style="width:0%; height: 10px" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div></div>
+								<div class="col-2" style="padding: 0"><small class="text-secondary">0</small></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="mt-5 p-3 rounded shadow-sm">
+					<h5 class="text-secondary">Berikan Ulasan</h5>
+					<div class="form-group">
+					  <textarea class="form-control" style="background-color: #F8F8F8" rows="3" id="comment" placeholder="Tulis ulasanmu disini"></textarea>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<form>
+							  <div class="form-group">
+								<label for="exampleFormControlFile1">Sertai gambar ?</label>
+								<input type="file" class="form-control-file" id="exampleFormControlFile1">
+							  </div>
+							</form>
+						</div>
+						<div class="col-6 text-right mt-4">
+							<button type="button" class="btn btn-info" style="width: 100px;">Kirim</button>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				<div class="pt-3"><h5 class="text-secondary">Semua Ulasan (5)</h5></div>
+				
+				<div class="row w-100 p-0 pt-4 pb-4 border-bottom">
+					<div class="col-2">
+						<img src="img/cust.jpg" class="rounded-circle w-100" alt="...">
+					</div>
+					<div class="col-2 pl-2">
+						A****n<br>
+						<small class="text-secondary">1 minggu lalu</small>
+					</div>
+					<div class="col-8 pl-0">
+						<div>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+						</div>
+						<span style="font-size: 13px">Mantap yang dijanjikan 4 kaki, meja yang datang kakinya 6. dapat bonus, terima kasih bosku.</span>
+						<div class="d-flex flex-row">
+							<img src="products-img/img2.jpg" class="rounded shadow m-2" width="100px">
+						</div>
+					</div>
+				</div>
+				
+				<div class="row w-100 p-0 pt-4 pb-4 border-bottom">
+					<div class="col-2">
+						<img src="img/cust.jpg" class="rounded-circle w-100" alt="...">
+					</div>
+					<div class="col-2 pl-2">
+						A****n<br>
+						<small class="text-secondary">1 minggu lalu</small>
+					</div>
+					<div class="col-8 pl-0">
+						<div>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+						</div>
+						<span style="font-size: 13px">Mantap yang dijanjikan 4 kaki, meja yang datang kakinya 6. dapat bonus, terima kasih bosku.</span>
+						<div class="d-flex flex-row">
+							<img src="products-img/img2.jpg" class="rounded shadow m-2" width="100px">
+							<img src="products-img/img3.jpg" class="rounded shadow m-2" width="100px">	
+						</div>
+					</div>
+				</div>
+				
+				<div class="row w-100 p-0 pt-4 pb-4 border-bottom">
+					<div class="col-2">
+						<img src="img/cust.jpg" class="rounded-circle w-100" alt="...">
+					</div>
+					<div class="col-2 pl-2">
+						A****n<br>
+						<small class="text-secondary">1 minggu lalu</small>
+					</div>
+					<div class="col-8 pl-0">
+						<div>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+							<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+							</svg>
+						</div>
+						<span style="font-size: 13px">Mantap yang dijanjikan 4 kaki, meja yang datang kakinya 6. dapat bonus, terima kasih bosku.</span>
+						<div class="d-flex flex-row">
+							<img src="products-img/img2.jpg" class="rounded shadow m-2" width="100px">
+							<img src="products-img/img2.jpg" class="rounded shadow m-2" width="100px">
+							<img src="products-img/img2.jpg" class="rounded shadow m-2" width="100px">
+						</div>
+					</div>
+				</div>
+				
+				
+					
+			</div>
+			
+			<!--produk lainnya-->
+			<div class="card shadow-sm ml-2" style="width: 25%; height: 300px">
+				<img src="products-img/img1.jpg" class="card-img-top product-img" alt="img">
+					<div class="card-img-overlay">
+						<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+					</div>
+				</img>
+				<div class="card-body p-2" style="height: 160px">
+					<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+					<p class="card-price">Rp XXX.XXX.XXX</p>
+				</div>
+				<div class="align-bottom p-2">
+					<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+					</svg>
+					<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+					</svg>
+					<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+					</svg>
+					<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+					</svg>
+					<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+					</svg>
+				</div>
+			</div>
+		
+		</div>
+		
+		<div id="lainnyy">
+			<h5 class="text-secondary mt-5">Lainnya di toko ini</h5>
+			<div class="card-deck" style="height: 350px">
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img1.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img1.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img1.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img1.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img1.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+			  
+			</div>
+		</div>
+		
+		<div id="rekomendasi">
+			<h5 class="text-secondary mt-5">Rekomendasi Untukmu</h5>	
+			<div class="card-deck">
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img2.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img2.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img2.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img2.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img2.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+		<div id="terakhir-dilihat">
+			<h5 class="text-secondary mt-5">Terakhir Dilihat</h5>
+			
+			<div class="card-deck">
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img3.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img2.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img2.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img2.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="card shadow-sm m-1">
+					<img src="products-img/img2.jpg" class="card-img-top product-img" alt="img">
+						<div class="card-img-overlay">
+							<button type="button" class="btn btn-card-img btn-outline-info btn-sm-card mt-4 mb-1">Add to Cart</button>
+						</div>
+					
+					<div class="card-body p-2" style="max-height: 80px">
+						<p class="card-title" style="font-size: 15px; line-height:1.2">Lampu LED bercahaya hanya jika terpapar cahaya matahari</p>
+						<p class="card-price">Rp XXX.XXX.XXX</p>
+					</div>
+					<div class="align-bottom p-2">
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+						<svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+						</svg>
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	
+	<!--footer-->
+	<div class="footer">
+        <div class="row">
+            <div class="col-sm-2">
+                <p style="font-size: 30px">FURNITURE</p>
+                <p>Tentang FURNITURE</p>
+                <p>Official Store FURNITURE</p>
+                <p>Deals FURNITURE</p>
+                <p>Bebas Ongkos Kirim</p>
+            </div>
+            <div class="col-sm-2 footertext">
+                  <p style="font-size: 30px">Beli</p>
+                <p>Perabot Rumah</p>
+                <p>Perabot Kantor</p>
+                <p>Perabot Restoran</p>
+                <p>Perabot Rumah Sakit</p>
+            </div>
+            <div class="col-sm-2 footertext">
+                  <p style="font-size: 30px">Bantuan</p>
+                <p>FURNITURE Care</p>
+                <p>Syarat dan Ketentuan</p>
+                <p>Kebijakan Privasi</p>
+            </div>
+            <div class="col-sm-6 footerfur">
+                <p class="mb-2" style="font-size: 50px">FURNITURE</p>
+                <p style="font-size: 20px;margin-top: -20px;">@2020, PT. CORONA CARRIER INDONESIA</p>
+            </div>
+        </div>
+    </div>
+	<!--/footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

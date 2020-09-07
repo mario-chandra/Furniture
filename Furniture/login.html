@@ -1,0 +1,180 @@
+<html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylespt.css">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya Libre" rel="stylesheet">
+
+  </head>
+  <body>
+      <div class="container-fluid p-0">
+          <div class="d-flex" style="height: 100%">
+              <div class="p-0" style="background-image: url(img/loginimg1.jpg); width: 72%;height: 100%">
+                  <div class="login-kupon">
+                      <div class="row">
+                          <div class="col">
+                               <h4>Daftar Sekarang dan Dapatkan Voucher Cashback</h4>
+                                <h1 style="text-align: left;padding-left: 10px; color: #123C8B; margin-top: 20px; ">IDR. 50.000</h1>
+                          </div>
+                      </div>
+                      <div class="row">
+                            <div class="col-6" style="padding-top: 20px;">
+                      <p>Gunakan kode promo yang dikirimkan melalui</p>
+                      <p>Email pada Transaksi pertama anda </p>
+                        </div>
+                        <div class="col-6">
+                            <img src="img/loginimg2.jpg" style="width: 250px;">
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="p-0" style="width: 28%; height: 100%">
+                  <div class="row">
+                    <div class="col-10 text-center py-2">
+                        <h5>Masuk / Daftar</h5>
+                    </div>
+					<div class="col pt-2">
+						<button type="button" class="close" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+                  </div>
+                  <div class="row">
+                    <div class="login-register-form-section">
+						<div class="d-flex">
+							<ul class="nav nav-tabs">
+							  <li class="nav-item active">
+								<a class="nav-link active" href="#login" data-toggle="tab" aria-expanded="true">Masuk</a>
+							  </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="#register" data-toggle="tab" aria-expanded="false">Daftar</a>
+							 </li>
+							</ul>
+						</div>
+                    <div role="tabpanel" class="tab-pane fade active show in" id="login">
+                        <form class="form-horizontal" method="post" action="">
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Alamat email atau nomor telepon" style="min-width: 335px;">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-key"></i></div>
+                                        <input type="password" class="form-control" id="myInput" placeholder="Kata Sandi" style="margin-bottom: 10px;min-width: 335px;">
+                                        <input type="checkbox" onclick="myFunction()">Show Password
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="ml-auto" style="padding-left: 210px;">
+                                <a href="forgot.html" style="color: #123C8B;font-family: 'Abhaya Libre';">Lupa kata sandi ? </a>
+                            </div>
+                            </div>
+                             <div class="row pl-4 mb-2">
+                      <button class="btn btn1 btn-outline-dark" role="button" style="text-transform:none">
+                          Masuk
+                      </button>
+                  </div>
+                  <div class="separator">Atau</div>
+                    <div class="row mt-2 pl-2">
+                      <div class="col">
+                        <a class="btn btn-outline-dark" href="/users/googleauth" role="button" style="text-transform:none">
+                          <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png">
+                            Login with Google
+                        </a>
+                    </div>
+                    </div>
+                        </form>
+                    </div>
+                <div role="tabpanel" class="tab-pane fade" id="register">
+                    <form class="form-horizontal" method="post" action="">
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                <input type="text" name="register_username" class="form-control" placeholder="Username" required="required" value="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-male"></i></div>
+                                <input type="text" name="register_fullname" class="form-control" placeholder="Nama Lengkap" required="required" value="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                <input type="email" name="register_email" class="form-control" placeholder="Alamat Email" required="required" value="">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                                <input type="password" name="register_password" class="form-control" placeholder="Kata Sandi" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                                <input type="password" name="register_cpassword" class="form-control" placeholder="Ulang Kata Sandi" required="required">
+                            </div>
+                        </div>
+                          <div class="form-group ">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                <input type="phone" name="register_phone" class="form-control" placeholder="No Telepon" required="required" value="">
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Saya Setuju dengan <b>syarat &amp; ketentuan</b> di FURNITURE</label>
+                        </div>
+                       <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Berlangganan dengan penawaran menarik dari kami!</label>
+                        </div>
+                        <div class="row pl-4 mb-2 mt-2">
+                      <button class="btn btn1 btn-outline-dark" role="button" style="text-transform:none">
+                          Register
+                      </button>
+                  </div>
+                  <div class="separator">Atau</div>
+                    <div class="row mt-2 pl-2">
+                      <div class="col">
+                        <a class="btn btn-outline-dark" href="/users/googleauth" role="button" style="text-transform:none">
+                          <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png">
+                            Register with Google
+                          </a>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                  </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+
+    <!-- Optional JavaScript -->
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+      </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  
+</body></html>

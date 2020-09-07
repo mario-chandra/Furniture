@@ -1,0 +1,434 @@
+.top-nav{
+  background-color: #DCDBDB;
+}
+
+.navbar1-color{
+    background-color: #F0870C;
+    color: black;
+}
+
+.container-crum{
+  height: 15px;
+
+}
+
+.crum-size{
+  font-size: 11px;
+  margin-right: 40px;
+}
+
+.navbar2-color{
+    background-color: #213B6C;
+    color: black;
+}
+
+.container-h{
+  height: 60px;
+}
+
+.title{
+    font-weight: 660;
+    color:
+}
+.container-title{
+  font-size: 30px;
+}
+
+.input-h{
+  height: 33px;
+}
+
+.btn3{
+	background-color: #213B6C;
+	border-color: white;
+    color: white;
+    min-width: 200px;
+}
+
+
+
+
+
+
+
+.test-color{
+
+}
+
+.dropdown-text{
+  color: black;
+
+}
+.item-drop{
+    border-bottom: 1px solid #969595;
+    color: #969595;
+    margin-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 100px;
+    font-weight: 600;
+}
+
+.item-drop2{
+    border-bottom: 1px solid #969595;
+    color: #969595;
+    margin-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 40px;
+    font-weight: 600;
+}
+
+.rm-symbol::after {
+    display:none;
+}
+
+.title{
+    font-weight: 660;
+    color:white;
+}
+.input-form{
+
+}
+.container-title{
+  font-size: 30px;
+}
+.input-h{
+  height: 33px;
+  margin-left: -900px;
+}
+
+.container-h{
+  height: 60px;
+}
+
+.top-nav{
+  background-color: #F0870C;
+}
+
+.top-nav2{
+  background-color: #213B6C;
+}
+
+.container-crum{
+  height: 15px;
+
+}
+
+.crum-size{
+  font-size: 11px;
+  margin-right: 40px;
+}
+
+a.crum-size{
+    color: white;
+}
+
+/* icon */
+
+
+    /* cart */
+      .sender{
+        margin-bottom: 10px;
+        margin-top: 5px;
+      }
+
+      .buy-cart{
+        margin: auto;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #969595;
+        padding-bottom: 10px;
+      }
+
+      .item-img{
+        float: left;
+      }
+
+      .item-text{
+        float: right;
+        font-size: 12px;
+        margin-left: 18px;
+      }
+
+      .item-price{
+        color: #F0870C;
+        font-size: 15px;
+        margin-right: -5px;
+      }
+
+      /* total */
+      .total{
+        mar
+      }
+
+      .total-text ,.total-num{
+        font-weight: 650;
+      }
+
+      .total-text{
+        float: left;
+        font-size: 13px;
+        color: #969595;
+      }
+
+      .total-num{
+        float: right;
+        text-align: right;
+        font-size: 13px;
+        color: #123C8B;
+      }
+
+      .button4{
+        padding: 10px 10px 10px 10px;
+      }
+
+/* cart */
+
+.cart{
+  margin-top: 35px;
+  display: flex;
+}
+
+
+.listheight{
+  width: 70%;
+
+}
+
+.semua{
+  margin-left: 22px;
+  font-size: 15px;
+  font-weight: 600;
+
+}
+
+input.checkboxsize{
+  width: 15px;
+  height: 15px;
+
+
+}
+
+
+.hapus{
+  float: right;
+  text-decoration: none;
+}
+
+.hapus:hover{
+  text-decoration: none;
+}
+
+
+
+
+
+/* bayar */
+
+
+.bayar{
+  margin-top: -60px;
+  float: right;
+
+}
+
+p.ringkasan{
+  text-align: center;
+  margin: auto;
+}
+
+.totalhargabox{
+  display: inline-block;
+  border-bottom: 1px solid black;
+
+}
+.totalharga{
+  float: left;
+
+
+}
+
+.harga{
+  margin-left: 70px;
+  float: right;
+}
+
+.bayar-button{
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.bayar-button2{
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+.button1 , .button2{
+  font-size: 18px;
+  margin-top: 10px;
+  margin: auto;
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.button1{
+  color:white;
+  background-color: #F0870C;
+}
+
+.button1:hover{
+  color:white;
+  background-color:#C77009;
+}
+
+.button2{
+  color: #123C8B;
+  text-align: center;
+
+}
+
+
+/* pilih barang */
+
+
+
+.listheight2{
+  width: 70%;
+
+}
+
+.checkboxline{
+  margin-bottom: 30px;
+}
+
+.select-all2{
+  margin-top: 30px;
+}
+
+.lack{
+  margin-left: 22px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+input.checkboxsize2{
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.cartcheck{
+  display: inline-block;
+  margin-left: 8px;
+}
+
+
+.warna-harga{
+  color: #F0870C;
+}
+
+.catatan{
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 27px;
+}
+
+.tulisan{
+  font-size: 12px;
+
+}
+
+.input-ctt{
+  background-color: #F7F7F7;
+  margin-top: -70px;
+  border-radius: 10%;
+  border: none;
+}
+
+
+/* wishlist */
+
+.wishlist{
+  margin-top: 70px;
+
+}
+
+
+
+.wishlist-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #5D5D5D;
+
+}
+
+.card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+	margin-bottom: 15px;
+}
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    height: 200px;
+    padding-top: 0px;
+}
+
+.btn-card-img{
+	position: absolute;
+	bottom: 32%;
+	right: 7px;
+	background-color: white;
+	border-radius: 50rem!important;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.card-title {
+	margin: 0px
+}
+
+.card-text {
+	font-size: 0.75rem; margin: 0px
+}
+
+.card-price {
+	font-size: 18px;
+	color: #F0870C;
+	font-family: Verdana,Geneva,sans-serif;  
+}
+.product-img{
+	height: 65%;
+}
+
+.btn-sm-card {
+    padding: .20rem .5rem;
+    font-size: .775rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+
+/*footer*/
+.footer{
+	background-color: #213B6C;
+	padding-top: 60px;
+	padding-left:100px;
+	padding-bottom: 60px;
+    color: white;
+    width: auto;
+}
+
+.footerfur{
+    text-align: right;
+    padding-right: 100px;
+    padding-left: 0px;
+    color: white;
+}
+
+.footertext{
+    padding-left: 20px;
+}
